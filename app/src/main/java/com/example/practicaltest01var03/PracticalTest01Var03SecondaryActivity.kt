@@ -25,23 +25,19 @@ class PracticalTest01Var03SecondaryActivity : AppCompatActivity() {
 
         val op = intent.getStringExtra("operator")
 
-        val v1 : String?
-        val v2 : String?
+        input4 = findViewById(R.id.input4)
+        input4.setText("$in3")
 
-        if (op == "+") {
-            v1 = in3?.split("+")[0]
-            v2 = in3?.split("+")[1]
-        } else {
-            v1 = in3?.split("-")[0]
-            v2 = in3?.split("-")[1]
+        correctButton.setOnClickListener {
+            val resultIntent = Intent(this, PracticalTest01Var03MainActivity::class.java)
+            setResult(Activity.RESULT_OK, resultIntent)
+            finish()
         }
 
-        if (in1 != null && in2 != null) {
-            if (op == "+") {
-                input4.setText(in3 + " = " + (in1.toInt() + in2.toInt()))
-            } else if (op == "-") {
-                input4.setText(in3 + " = " + (in1.toInt() - in2.toInt()))
-            }
+        incorrectButton.setOnClickListener {
+            val resultIntent = Intent(this, PracticalTest01Var03MainActivity::class.java)
+            setResult(Activity.RESULT_CANCELED, resultIntent)
+            finish()
         }
     }
 }

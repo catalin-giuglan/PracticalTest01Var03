@@ -89,16 +89,3 @@ class PracticalTest01Var03MainActivity : AppCompatActivity() {
         super.onDestroy()
     }
 }
-
-
-//correctButton.setOnClickListener {
-//    val resultIntent = Intent()
-//    setResult(Activity.RESULT_OK, resultIntent)
-//    finish()
-//}
-//
-//incorrectButton.setOnClickListener {
-//    val resultIntent = Intent()
-//    setResult(Activity.RESULT_CANCELED, resultIntent)
-//    finish()
-//}
