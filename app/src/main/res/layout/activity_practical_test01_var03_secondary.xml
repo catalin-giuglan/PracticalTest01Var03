@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest01Var03SecondaryActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/input4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:enabled="false"
+            android:saveEnabled="true"
+            android:text=""
+            android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/corect"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="text"
+        android:saveEnabled="true"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="Correct"/>
+
+    <Button
+        android:id="@+id/incorect"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="text"
+        android:saveEnabled="true"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:text="Incorrect" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
